@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+     
+}
+.header{
+   display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.menu a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #69585A;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.menu a:hover{
+    background: #C1C1C1;
+    color: #473D3E;
+}
+
+main .greeting span{
+    font-weight: bolder;
+}
+main .greeting{
+    margin: 100px auto;
+    text-align: center;
+    font-size: 36px;
+}
