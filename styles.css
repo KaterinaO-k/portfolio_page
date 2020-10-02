@@ -44,7 +44,7 @@ main .greeting{
 
 .nav_btn{
     display: inline-block;
-    padding: 10px 5px;
+    
     border: 2px solid #473D3E;
     border-radius: 5px;
 }
@@ -53,6 +53,8 @@ main .greeting{
     border: none;
 }
 .nav_btn a{
+    padding: 10px 10px;
+    display: inline-block;
     text-decoration: none;
     color: #69585A;
     text-transform: uppercase;
@@ -60,4 +62,37 @@ main .greeting{
 }
 .nav_btn:first-child{
     margin-right: 50px;
+}
+
+h2{
+    font-size:20px;
+    text-align: center;
+    margin: 50px auto;
+    text-transform: uppercase;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery .gallery-item{
+    display: inline-block;
+    border: 2px solid red;
+    width:800px;
+    min-height: 350px;
+    background-position: center;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.gallery-item4{
+    background-image: url(img/Screen4.jpg);
+}
+.gallery-item3{
+    background-image: url(img/Screen3.jpg);
+}
+.gallery-item2{
+    background-image: url(img/Screen2.jpg);
+}
+.gallery-item1{
+    background-image: url(img/Screen1.jpg);
 }
