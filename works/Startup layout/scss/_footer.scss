@@ -1,0 +1,43 @@
+$colorW: #fff;
+$colorRbg: rgba(192,48,28,0.7);
+$colorR: mix($colorW, $colorRbg, 10%);
+$size: 14px;
+@mixin border-radius($radius) { 
+ -webkit-border-radius: $radius; 
+ -moz-border-radius: $radius; 
+ -ms-border-radius: $radius; 
+ border-radius: $radius; 
+}
+@mixin btn {
+    padding: 15px 20px;
+    border: $size*0.14 solid $colorW;
+   @include border-radius($size*0.14);
+    background-color: transparent;
+    color: $colorW;
+    font-size: $size*1.1;
+    text-transform: uppercase;
+}
+footer {
+    padding: $size*3;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $colorRbg;
+    color: $colorW;
+    p {
+        font-size: $size*2.1;
+        line-height: $size*3.1;
+        margin-bottom: $size*3.6;
+        margin-top: 0;
+    }
+    button {
+        @include btn;
+        margin-bottom: $size*3.6;
+        &:hover {
+            background-color: $colorW;
+            color: $colorR;
+        }
+    }
+}

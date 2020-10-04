@@ -1,0 +1,83 @@
+$colorW: #fff;
+$colorRbg: rgba(192,48,28,0.7);
+$colorR: mix($colorW, $colorRbg, 10%);
+$size: 14px;
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin border-radius($radius) { 
+    -webkit-border-radius: $radius; 
+    -moz-border-radius: $radius; 
+    -ms-border-radius: $radius; 
+    border-radius: $radius; 
+   }
+@mixin btn {
+    padding: 15px 20px;
+    border: $size*0.14 solid $colorW;
+    @include border-radius($size*0.14);
+    background-color: transparent;
+    color: $colorW;
+    font-size: $size*1.1;
+    text-transform: uppercase;
+}
+header {
+    background-blend-mode: multiply;
+    background-image: url("../img/header_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    color: $colorW;
+
+    nav {
+        @include flexbox;
+        align-items: center;
+        padding-top: $size*2.9;
+        
+        .header_logo {
+            margin-right: $size*36.4;
+        }
+        .menu {
+            list-style: none;
+            @include flexbox;
+            li{
+            margin-right: $size*2.1;
+            
+                a {
+                text-decoration: none;
+                color: $colorW;
+                &:hover {
+                        border-bottom: $size*0.07 solid $colorW;
+                    }
+                }
+            }
+        }
+    }
+
+    .welcome {
+        margin: $size*17.9 auto 0;
+        text-align: center;
+        line-height: $size*1.7;
+        h1 {
+            text-transform: uppercase;
+            font-size: $size*3.4;
+            font-weight: lighter;
+        }
+        p {
+            font-size: $size*1.4;
+            margin-top: $size*2.1;
+        }
+        .btn_get_started {
+            margin: $size*3.6 auto $size*18.6;
+            @include btn;
+            
+            &:hover{
+                background-color: $colorW;
+                color: $colorR;
+            }
+        }
+    }
+}

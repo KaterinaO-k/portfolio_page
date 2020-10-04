@@ -1,0 +1,130 @@
+$size: 14px;
+$colorW: #fff;
+$colorRbg: rgba(192,48,28,0.7);
+$colorR: mix($colorW, $colorRbg, 10%);
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin border-radius($radius) { 
+    -webkit-border-radius: $radius; 
+    -moz-border-radius: $radius; 
+    -ms-border-radius: $radius; 
+    border-radius: $radius; 
+   }
+@mixin btn {
+    padding: 15px 20px;
+    border: $size*0.14 solid $colorW;
+    @include border-radius($size*0.14);
+    background-color: $colorW;
+    color: $colorR;
+    font-size: $size*1.1;
+    text-transform: uppercase;
+}
+.latest_works {
+    padding: $size*6.8 0;
+     h2 {
+        text-transform: uppercase;
+        font-size: $size*1.4;
+    }
+    hr {
+        width: $size*3.9;
+        margin: $size*1.07 auto;
+    }
+    .works_menu {
+        list-style: none;
+        @include flexbox;
+        justify-content: center;
+        li {
+            margin-right: $size*1.8;
+        }
+        a {
+            text-decoration: none;
+            font-size: $size*1.1;
+            color: #555555;
+            &:hover {
+                color: $colorR;
+            }
+        }
+    }
+    .works {
+        @include flexbox;
+        flex-wrap: wrap;
+        margin-top: $size*5;
+        .works_item {
+            width: $size*25.7;
+            height: $size*22.9;
+            margin-right: $size*1.4;
+            margin-bottom: $size*1.4;
+            background-blend-mode: multiply;
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $colorRbg;
+            }
+            &:hover .works_item_info {
+                display: block;
+            }
+            .works_item_info {
+                display: none;
+                color: $colorW;
+
+                p:first-child{
+                    margin: $size*7.1 auto $size;
+                    font-size: $size*1.3;
+                    font-weight: bold;
+                }
+                p:last-child{
+                    font-size: $size*0.9;
+                    margin-top: $size;
+                }
+                button{
+                    a {
+                        display: block;
+                        padding: 15px 20px;
+                        text-decoration: none;
+                        color: $colorR;
+                        &:hover{
+                            font-size: $size*1.4;
+                            font-weight: bold;
+                        }
+                    }
+                    @include btn;
+                    padding: 0;
+                }
+            }
+           
+        }
+        .work1 {
+            background-image: url("../img/work1.png");
+        }
+        .work2 {
+            background-image: url("../img/work2.png");
+        }
+        .work3 {
+            background-image: url("../img/work3.png");
+        }
+        .work4 {
+            background-image: url("../img/work4.png");
+        }
+        .work5 {
+            background-image: url("../img/work5.png");
+        }
+        .work6 {
+            background-image: url("../img/work6.png");
+        }
+        .work7 {
+            background-image: url("../img/work7.png");
+        }
+        .work8 {
+            background-image: url("../img/work8.png");
+        }
+        .work9 {
+            background-image: url("../img/work9.png");
+        }          
+    }
+}

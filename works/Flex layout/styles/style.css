@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+header {
+    background-image: url("../img/hp-header-bg.jpg");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.intro {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display:flex;
+    align-items: center;
+   }
+.intro span{
+       color: darkred;
+       font-weight: bold;
+       margin-right: 30px;
+   }
+.intro p{
+    flex-grow: 6;
+   }
+.intro_button{
+    background-color: darkred;
+    color:#fff;
+    padding: 5px;
+    border: none;
+    flex-basis: 120px;
+    flex-grow: 2;
+}
+.intro_button:hover{
+    background-color: #fff;
+    color:darkred;
+}
+.intro_button:active{
+    background-color: darkred;
+    color:#fff;
+}
+ main {
+     display:flex;
+ }
+ article {
+    flex-grow: 2;
+ }
+ .item{
+     padding:10px 20px;
+ }
+ .item h2{
+     color: darkred;
+     font-weight:bold;
+     margin-bottom: 0;
+     font-size: 16px;
+ }
+ .item h2+p{
+     font-style: italic;
+     color: #4b4b4b;
+     margin: 5px 0 10px;
+ }
+.item_content {
+    display: flex;
+}
+.item_content img{
+    width: 225px;
+    margin-right: 10px;
+}
+.item_content img+div{
+    padding:0 10px;
+}
+.item_content div>p{
+    margin-top:0;
+}
+.item ul{
+    display: flex;
+    background-color: darkred;
+    padding: 5px;
+}
+.item ul li{
+    margin-right: 10px;
+    list-style: none;
+    color: #fff;
+}
+.item ul a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+aside{
+     flex-basis: 40%;
+     background-color: #e9decc;
+     padding:10px 20px;
+     flex-grow: 1;
+ }
+ aside h3{
+     color: darkred;
+     font-weight: bold;
+ }
+aside .log_in {
+     display:flex;
+     flex-wrap: wrap;
+}
+.log_in label{
+     font-weight: bold;
+ }
+.log_in label span{
+color: darkred; 
+font-weight: bold;
+}
+.log_in .inputs {
+    margin-right: 20px;
+}
+.log_in input {
+    width: 150px;
+}
+.inputs label{
+    display:block;
+    margin-bottom: 10px;
+}
+.log_in a{
+    color: darkred;
+    text-decoration: none;
+}
+#btn_login  {
+    margin-top: 5px;
+    background-color: darkred;
+    color:#fff;
+    border: none;
+    padding: 5px 10px;
+}
+#btn_login:hover{
+    background-color: #fff;
+    color:darkred;
+}
+#btn_login:active{
+    background-color: darkred;
+    color:#fff;
+}
+.nav {
+    padding:0;
+}
+.nav li:first-child{
+    list-style: none;
+}
+.nav li:last-child{
+    list-style: disc;
+    margin-left: 13px;
+}
+.nav li span{
+    color:#000;
+    position: relative;
+    margin-right: 5px;
+}
+.nav a{
+    color: darkred;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
