@@ -3,12 +3,12 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      scroll-behavior: smooth;
+     box-sizing: border-box;
 }
 
 .container{
     width: 1170px;
     margin: 0 auto;
-     
 }
 .header{
    display: flex;
@@ -83,23 +83,39 @@ main .greeting{
 h2{
     font-size:20px;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 10px;
     text-transform: uppercase;
 }
-.gallery{
+.container p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.gallery .gallery-item{
-    display: inline-block;
+.portfolio_item{
+    display:flex;
+    justify-content: space-between;
+}
+.portfolio_item .description{
+    align-self: center;
+    padding: 50px;
+    border: 5px solid lightgray;
+    width: 300px;
+    height: 200px;
+}
+.portfolio .gallery-item{
+    
     width:800px;
     min-height: 350px;
     background-position: center;
     margin-right: 50px;
     margin-bottom: 50px;
 }
-.gallery .gallery-item a{
+.portfolio .gallery-item a{
     display: block;
     width:800px;
     min-height: 350px;
