@@ -119,9 +119,11 @@ h2{
     display: block;
     width:800px;
     min-height: 350px;
-}
+    background-repeat: no-repeat;
+    }
 .gallery-item4{
     background-image: url(img/Screen4.jpg);
+    
 }
 .gallery-item3{
     background-image: url(img/Screen3.jpg);
@@ -131,4 +133,8 @@ h2{
 }
 .gallery-item1{
     background-image: url(img/Screen1.jpg);
+}
+.gallery-item0{
+    background-image: url(img/Screen0.jpg);
+   
 }
