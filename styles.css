@@ -110,37 +110,31 @@ h2{
 .portfolio .gallery-item{    
     width:800px;
     min-height: 350px;
-    background-position: center;
+    background-size: cover;
     margin-bottom: 50px;
+    background-repeat: no-repeat;
 }
 .portfolio .gallery-item a{
     display: block;
     width:800px;
     min-height: 350px;
-    background-repeat: no-repeat;
+    
     }
 .gallery-item5{
         background-image: url(img/Screen5.jpg);
-        background-size: cover;
     }
 .gallery-item4{
     background-image: url(img/Screen4.jpg);
-    background-size: cover;
 }
 .gallery-item3{
     background-image: url(img/Screen3.jpg);
-    background-size: cover;
 }
 .gallery-item2{
     background-image: url(img/Screen2.jpg);
-    background-size: cover;
 }
 .gallery-item1{
     background-image: url(img/Screen1.jpg);
-    background-size: cover;
 }
 .gallery-item0{
     background-image: url(img/Screen0.jpg);
-    background-size: cover;
-   
 }
