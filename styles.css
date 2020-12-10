@@ -121,9 +121,11 @@ h2{
     min-height: 350px;
     background-repeat: no-repeat;
     }
+.gallery-item5{
+        background-image: url(img/Screen5.jpg);
+    }
 .gallery-item4{
     background-image: url(img/Screen4.jpg);
-    
 }
 .gallery-item3{
     background-image: url(img/Screen3.jpg);
