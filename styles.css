@@ -107,12 +107,10 @@ h2{
     width: 300px;
     height: 200px;
 }
-.portfolio .gallery-item{
-    
+.portfolio .gallery-item{    
     width:800px;
     min-height: 350px;
     background-position: center;
-    margin-right: 50px;
     margin-bottom: 50px;
 }
 .portfolio .gallery-item a{
@@ -123,20 +121,26 @@ h2{
     }
 .gallery-item5{
         background-image: url(img/Screen5.jpg);
+        background-size: cover;
     }
 .gallery-item4{
     background-image: url(img/Screen4.jpg);
+    background-size: cover;
 }
 .gallery-item3{
     background-image: url(img/Screen3.jpg);
+    background-size: cover;
 }
 .gallery-item2{
     background-image: url(img/Screen2.jpg);
+    background-size: cover;
 }
 .gallery-item1{
     background-image: url(img/Screen1.jpg);
+    background-size: cover;
 }
 .gallery-item0{
     background-image: url(img/Screen0.jpg);
+    background-size: cover;
    
 }
